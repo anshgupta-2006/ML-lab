@@ -7,8 +7,7 @@ from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_squared_error, mean_absolute_error, r2_score
 
 # Load Student Performance Dataset (Math Course)
-url = "https://raw.githubusercontent.com/guipsamora/pandas_exercises/master/04_Apply/Students_Academic_Performance/student-mat.csv"
-df = pd.read_csv(url, sep=";")
+df = pd.read_csv('student-mat.csv', sep=";")
 
 # (a) Extract G2 (X) and G3 (Y)
 X = df[['G2']].values
